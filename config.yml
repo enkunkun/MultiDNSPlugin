@@ -1,0 +1,23 @@
+#MultiDDNSPlugin
+#利用するサービスを指定してください。
+#対応サービス及び必要な設定項目
+#・mydnsjp(http://www.mydns.jp/)
+#  idとpassを設定
+#・ddojp(http://ddo.jp/、有料版)
+#  domainとpassを設定
+#・ddojpfree(http://ddo.jp/、無料版)
+#  domainとpassを設定
+#・valuedomain(http://www.value-domain.com/)
+#  domainとpassとhostを設定
+#・kdnsjp(http://kdns.jp/)
+#  idとpassとdomainを設定
+service: noset
+#ユーザーIDやユーザー名を指定してください
+id: noset
+#ドメインを設定してください
+domain: noset
+#DDNSサービスのパスワードを指定してください
+pass: noset
+#ホスト名を指定してください
+#(不要な場合「'*'」と指定してください)
+host: '*'
