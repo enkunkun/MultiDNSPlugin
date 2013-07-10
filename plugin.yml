@@ -1,0 +1,6 @@
+name: MultiDDNSPlugin
+main: jp.mamesoft.multiddnsplugin.MultiDDNSPlugin
+version: 1.00
+description: DDNS IPAddress Renew.
+author: Mamesoft
+website: http://mamesoft.jp/bukkit/multiddns
