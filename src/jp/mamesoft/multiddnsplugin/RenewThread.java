@@ -25,6 +25,9 @@ public class RenewThread extends TimerTask {
 		case "kdnsjp":
 			basicauth("https://kdns.jp/nic/update?hostname=%domain%");
 			break;
+		case "ieserver":
+			getrequest("https://ieserver.net/cgi-bin/dip.cgi?username=%id%&domain=%domain%&password=%pass%");
+			break;
 		default:
 			MultiDDNSPlugin.log.info("[WARNING]DDNSサービスの設定が間違っています！");
 		}

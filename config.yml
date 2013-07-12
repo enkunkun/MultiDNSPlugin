@@ -11,6 +11,8 @@
 #  domainとpassとhostを設定
 #・kdnsjp(http://kdns.jp/)
 #  idとpassとdomainを設定
+#・ieserver(http://ieserver.net/)
+#  idとpassとdomainを設定
 service: noset
 #ユーザーIDやユーザー名を指定してください
 id: noset
