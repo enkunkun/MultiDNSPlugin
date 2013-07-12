@@ -9,17 +9,23 @@ public class RenewThread extends TimerTask {
 	@Override
 	public void run() {
 		String service = MultiDDNSPlugin.service;
-		if(service.equals("mydnsjp")){
+		switch(service){
+		case "mydnsjp":
 			basicauth("http://www.mydns.jp/login.html");
-		}else if(service.equals("ddojp")){
+			break;
+		case "ddojp":
 			getrequest("http://ddo.jp/dnsupdate.php?dn=%domain%&pw=%pass%");
-		}else if(service.equals("ddojpfree")){
+			break;
+		case "ddojpfree":
 			getrequest("http://free.ddo.jp/dnsupdate.php?domain=%id%&pw=%pass%");
-		}else if(service.equals("valuedomain")){
+			break;
+		case "valuedomain":
 			getrequest("http://dyn.value-domain.com/cgi-bin/dyn.fcg?d=%domain%&p=%pass%&h=%host%");
-		}else if(service.equals("kdnsjp")){
+			break;
+		case "kdnsjp":
 			basicauth("https://kdns.jp/nic/update?hostname=%domain%");
-		}else{
+			break;
+		default:
 			MultiDDNSPlugin.log.info("[WARNING]DDNSサービスの設定が間違っています！");
 		}
 	}
